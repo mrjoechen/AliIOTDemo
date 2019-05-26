@@ -1,4 +1,4 @@
-package com.chenqiao.aliiot.utils;
+package com.chenqiao.moduleiot.Utils;
 
 import android.content.Context;
 import android.net.wifi.WifiInfo;
@@ -12,7 +12,6 @@ import java.io.LineNumberReader;
 import java.net.NetworkInterface;
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Enumeration;
 import java.util.Locale;
 
 public class DeviceUtils {
