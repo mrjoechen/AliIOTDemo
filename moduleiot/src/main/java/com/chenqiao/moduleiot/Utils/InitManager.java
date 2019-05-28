@@ -76,7 +76,7 @@ public class InitManager {
      * @param productSecret 产品密钥
      * @param callback 初始化建联结果回调
      */
-    public static void init(Context context, String productKey, String deviceName, String deviceSecret, String productSecret, final IDemoCallback callback) {
+    public static void init(Context context, String productKey, String deviceName, String deviceSecret, String productSecret, String region, final IDemoCallback callback) {
         // 构造三元组信息对象
         DeviceInfo deviceInfo = new DeviceInfo();
         // 产品类型
@@ -122,9 +122,10 @@ public class InitManager {
         // 对应 receiveOfflineMsg = !cleanSession, 默认不接受离线消息
 //        clientConfig.receiveOfflineMsg = true;
         // 设置 mqtt 请求域名，默认"{pk}.iot-as-mqtt.cn-shanghai.aliyuncs.com:1883" ,如果无具体的业务需求，请不要设置。
+        //clientConfig.channelHost = productKey + ".iot-as-mqtt." + region + ".aliyuncs.com:1883";
         // 文件配置测试 itls
         if ("itls_secret".equals(deviceSecret)){
-            clientConfig.channelHost = productKey + ".itls.cn-shanghai.aliyuncs.com:1883";//线上
+            clientConfig.channelHost = productKey + ".itls." + region + ".aliyuncs.com:1883";//线上
             clientConfig.productSecret = productSecret;
             clientConfig.secureMode = 8;
         }

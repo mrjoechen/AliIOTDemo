@@ -1,6 +1,7 @@
 package com.chenqiao.moduleiot.Utils;
 
 import com.aliyun.alink.linkkit.api.ILinkKitConnectListener;
+import com.aliyun.alink.linksdk.cmp.core.listener.IConnectNotifyListener;
 
 /*
  * Copyright (c) 2014-2016 Alibaba Group. All rights reserved.
@@ -20,5 +21,5 @@ import com.aliyun.alink.linkkit.api.ILinkKitConnectListener;
  *
  */
 
-public interface IDemoCallback extends ILinkKitConnectListener{
+public interface IDemoCallback extends ILinkKitConnectListener, IConnectNotifyListener {
 }
