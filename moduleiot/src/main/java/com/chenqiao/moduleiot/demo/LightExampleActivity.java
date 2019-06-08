@@ -20,6 +20,7 @@ import com.aliyun.alink.linksdk.tmp.device.payload.ValueWrapper;
 import com.aliyun.alink.linksdk.tmp.listener.IPublishResourceListener;
 import com.aliyun.alink.linksdk.tools.AError;
 import com.aliyun.alink.linksdk.tools.ALog;
+import com.chenqiao.moduleiot.R;
 
 import java.io.UnsupportedEncodingException;
 import java.util.HashMap;

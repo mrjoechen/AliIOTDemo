@@ -6,7 +6,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.aliyun.alink.linksdk.tools.ALog;
-import com.bjadks.aliiotmodule.R;
+import com.chenqiao.moduleiot.R;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
